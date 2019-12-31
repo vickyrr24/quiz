@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+    <script src="script1.js"></script>
+    <link rel="stylesheet" type="text/css" href="quiz.css">
+    <title>Quiz</title>
+</head>
+<body ng-app="myapp">
+    <div ng-controller="myctrl" class="dashboard">
+        <h1>{{name}}</h1>
+    </div>
+    <div ng-controller="quiz" class="onboard">
+            <h3 class="question">Question no: {{index+1}} </h3>
+            <p>{{q[index].question}}</p>
+            <div id="hide">
+                <select ng-model="ans" ng-options="x for x in q[index].options"></select>
+                <button  ng-click="next()" type="button">Submit</button>
+            </div>
+            <p id="result">Correct : {{crt}} <span> Incorrect : {{incrt}}</span></p>
+           
+        </div>
+        
+    </div>    
+</body>
+</html>

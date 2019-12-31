@@ -1,0 +1,46 @@
+.dashboard
+{
+ color: rgba(235, 210, 68, 0.925);
+ margin: auto;
+ width: 60%;
+ border: 3px solid rgb(201, 219, 174);
+ padding: 10px;
+ text-align: center;
+}
+select {
+    width: 175px;
+    height: 30px;
+    padding: 5px 10px;    
+  }
+body{
+    background-color:black;
+}
+h1{
+    color:white;
+    text-align: center;
+}
+h3{
+    color:white;
+    font-style: italic;
+    font-size: large;
+    
+}
+.onboard{
+    color:white;
+    margin:auto;
+    width:60%;
+    padding:20px;
+}
+p{
+    color:white;
+    text-align: center;
+}
+.active{
+    display: block!important;
+}
+#result{
+    display: none;
+}
+.hide{
+    display: none;
+}
